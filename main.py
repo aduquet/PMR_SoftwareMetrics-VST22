@@ -121,6 +121,7 @@ def updateDF(method_id, metric_id, metric):
     global df_main
 
     if not df_main.empty:
+        
         df_main.at[method_id, metric_id] = metric        
     
     else:
@@ -136,7 +137,6 @@ def createDF():
     global df_main
 
     metric_names = [ 
-  #      'method_id',
         'cyclomatic_complexity',
         'tloc', 
         'sloc_whbl', 

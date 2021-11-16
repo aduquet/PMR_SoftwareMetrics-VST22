@@ -1,6 +1,6 @@
 
 
-public class cosineDistance {
+public class cosineDist {
     public static double cosineDistance_m(Double[] p1, Double[] p2) {
         double dotProduct = 0.0;
         double lengthSquaredp1 = 0.0;
