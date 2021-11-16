@@ -136,7 +136,7 @@ def createDF():
     global df_main
 
     metric_names = [ 
-        'method_id',
+  #      'method_id',
         'cyclomatic_complexity',
         'tloc', 
         'sloc_whbl', 
