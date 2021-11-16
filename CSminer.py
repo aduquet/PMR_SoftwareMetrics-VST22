@@ -11,6 +11,7 @@ class keyWords():
     loops = ['for ', 'while ', 'do ', 'if']
     op = ['and', 'or', 'xor']
     aritmeticOperator = ['+', '-', '*', '/', '%', 'sqrt', '^', 'pow', 'abs', 'log']
+    others = ['(', ')', '{', '}']
     specialOperands = ['++', '--', '**']
     comparativeOperator = ['<', '>', '<=', '>=', '==', '!=', '&&', '||', '!', '&', '|', '<<', '>>', '~', '^' ]
     comments = ['/*', '//', '*/', '/**', '*/' ]
@@ -143,6 +144,14 @@ class CSminerGenericMetrics(object):
             i = i.replace('{','')
             i = i.replace('}','')
             if 'return' in i:
+                for k in keyWords.others:
+                    if k in i:
+                        i = i.replace(k,'')
+
+                for k in keyWords.aritmeticOperator:
+                    if k in i:
+                        i = i.replace(k,'')
+
                 if ';' in i:
                     returnInf = i.replace(';','')
                     returnInf = returnInf.split(' ')
@@ -157,13 +166,35 @@ class CSminerGenericMetrics(object):
             return False, 0, 'NA', 'NA'
         
         else:
-            
             for i in data:
+
                 i = i.replace('  ','')
+
                 if returnInf[0] + ' =' in i:
-                    for j in keyWords.dataType:
-                        if j in i:
-                            returnInfaux = j
+                    if '[' and ']' in i:
+                        for j in keyWords.dataType:
+                            i = i.replace('[','')
+                            i = i.replace(']','')
+                            if j in i:
+                                returnInfaux = 'array_' + j
+                    else: 
+                        for j in keyWords.dataType:
+                            if j in i:
+                                returnInfaux = j
+
+                else:
+                    if i.find(returnInf[0]):
+                        if '[' and ']' in i:
+                            for j in keyWords.dataType:
+                                i = i.replace('[','')
+                                i = i.replace(']','')
+                                if j in i:
+                                    returnInfaux = 'array_' + j
+                    else: 
+                        for j in keyWords.dataType:
+                            if j in i:
+                                returnInfaux = j
+
             return True, count, 1, returnInfaux
 
 

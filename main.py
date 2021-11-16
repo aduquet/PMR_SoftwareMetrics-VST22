@@ -29,9 +29,11 @@ def oneFile(input_file):
         print('The file ' '"', input_file, '" does not exist!')
 
 def multipleFiles(input_file, resultsPath):
+    
     inputPaths = gl.glob(input_file)
     checkPaths(inputPaths)
     for input in inputPaths:
+        # print('*******************', input)
         try:
             CSminer_openFile(input).extFile()
             if CSminer_openFile(input).is_non_empty_file():
@@ -41,6 +43,8 @@ def multipleFiles(input_file, resultsPath):
                 print('Empty file!')
         except OSError:
             print('The file ' '"', input, '" does not exist!')
+    print('*** Done *** \n')
+    print('* File saved in: * \n', resultsPath)  
 
 def getMetrics(input_file, data, resultPath):
 
@@ -127,8 +131,7 @@ def saveDF(resultsPath):
     resultsPath = resultsPath + '\\CSminerMetrics.csv'
     df_main.reset_index()
     df_main.to_csv(resultsPath)
-    print('*** Done *** \n')
-    print('* File saved in: * \n', resultsPath)    
+      
 def createDF():
     global df_main
 
