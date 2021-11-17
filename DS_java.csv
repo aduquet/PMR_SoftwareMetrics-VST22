@@ -1,0 +1,101 @@
+,cyclomatic_complexity,tloc,sloc_whbl,sloc_statements_wc,nloc_whbl,nloc,token_count,start_line,end_line,full_parameters,argDT,numArg,numLoops,numVariablesDeclared,numAritOper,numExternalMethods,return,Total_return,TotalVariablesReturned,returnType,ext,MR_ADD,MR_MUL,MR_PER,MR_INC,MR_EXC,MR_INV,method_id,Method_Name
+add_values.java,2,9,9,6,6,7,42,2,8,['Integer [ ] a'],['array_Integer'],1,1,2,1,1,TRUE,1,1,int ,java,1,1,1,1,1,1,add_values,add_values
+array_calc.java,2,11,10,7,7,8,60,3,10,"['Integer [ ] a', ' Integer k']","['array_Integer', 'Integer ']",2,1,1,1,2,TRUE,1,1,array_int ,java,1,1,0,0,0,1,array_calc,array_calc
+array_copy.java,2,12,10,7,7,8,55,4,11,['Integer [ ] a'],['array_Integer'],1,1,1,0,2,TRUE,1,1,array_int ,java,1,1,0,0,0,1,array_copy,array_copy
+autoCorrelation.java,2,12,10,7,7,8,79,4,11,"['Double [ ] data', ' Integer lag', ' Double mean', ' Double variance']","['array_Double', 'Integer ', 'Double ', 'Double ']",4,1,3,5,1,TRUE,1,1,double ,java,0,0,0,0,0,0,autoCorrelation,autoCorrelation
+average.java,2,9,9,6,6,7,46,2,8,['Integer [ ] a'],['array_Integer'],1,1,2,2,2,TRUE,1,1,double ,java,1,1,1,0,0,1,average,average
+bi_SearchFromTo.java,4,20,20,15,15,18,100,2,19,"['Double [ ] elements', ' Double key', ' Integer from', ' Integer to']","['array_Double', 'Double ', 'Integer ', 'Integer ']",4,1,4,6,0,TRUE,2,1,array_double ,java,0,0,0,1,0,0,bi_SearchFromTo,bi_SearchFromTo
+bubble.java,4,19,17,12,12,15,99,4,18,['Integer [ ] a'],['array_Integer'],1,2,3,2,1,TRUE,1,1,array_Integer ,java,1,1,1,0,0,1,bubble,bubble
+cal_AbsoluteDiff.java,4,17,15,10,10,13,83,4,16,['Double [ ] z'],['array_Double'],1,1,1,1,3,TRUE,3,1,array_double ,java,1,1,0,0,0,1,cal_AbsoluteDiff,cal_AbsoluteDiff
+cal_Diff.java,2,11,9,6,6,7,66,4,10,"['final double [ ] x', ' final double [ ] y']","['array_double', 'array_double']",2,1,1,1,2,TRUE,1,1,array_double ,java,0,0,0,0,0,0,cal_Diff,cal_Diff
+cal_DividedDiff.java,3,16,16,12,12,14,142,2,15,"['final double x [ ]', ' final double y [ ]']","['array_double', 'array_double']",2,2,4,2,2,TRUE,1,1,array_double ,java,1,0,0,0,0,0,cal_DividedDiff,cal_DividedDiff
+canberraDist.java,4,13,11,8,8,9,105,4,12,"['Double [ ] a', ' Double [ ] b']","['array_Double', 'array_Double']",2,1,4,6,4,TRUE,1,1,array_double ,java,0,0,0,1,1,1,canberraDist,canberraDist
+chebyshevDist.java,4,18,16,11,11,14,108,4,17,"['Double [ ] p1', ' Double [ ] p2']","['array_Double', 'array_Double']",2,1,3,1,4,TRUE,2,1,array_double ,java,0,1,0,1,1,1,chebyshevDist,chebyshevDist
+checkNonNegative.java,3,12,10,6,6,8,45,4,11,['final double [ ] in'],['array_double'],1,1,1,0,1,TRUE,2,1,array_boolean ,java,0,1,1,1,0,1,checkNonNegative,checkNonNegative
+checkPositive.java,3,12,10,6,6,8,45,4,11,['final double [ ] in'],['array_double'],1,1,1,0,1,TRUE,2,1,array_boolean ,java,0,1,1,1,0,1,checkPositive,checkPositive
+check_equal.java,4,15,13,8,8,11,67,4,14,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,1,0,1,TRUE,3,1,array_Integer ,java,0,0,0,0,0,0,check_equal,check_equal
+check_eq_tolerance.java,4,15,13,8,8,11,77,4,14,"['Double [ ] a', ' Double [ ] b', ' Double tol']","['array_Double', 'array_Double', 'Double ']",3,1,1,0,1,TRUE,3,1,array_Double ,java,0,0,0,0,0,0,check_eq_tolerance,check_eq_tolerance
+chiSquare.java,5,29,27,21,21,25,188,4,28,"['Double [ ] expected', ' Double [ ] observed']","['array_Double', 'array_Double']",2,2,9,12,4,TRUE,1,1,array_double ,java,0,1,0,0,0,1,chiSquare,chiSquare
+clip.java,4,19,17,12,12,15,101,4,18,"['Integer [ ] a', ' Integer lowerLim', ' Integer upperLim']","['array_Integer', 'Integer ', 'Integer ']",3,1,1,0,2,TRUE,1,1,array_int ,java,0,0,0,0,0,0,clip,clip
+cnt_zeroes.java,3,13,11,7,7,9,49,4,12,['Integer [ ] a'],['array_Integer'],1,1,2,1,1,TRUE,1,1,int ,java,0,0,1,1,1,0,cnt_zeroes,cnt_zeroes
+cosineDist.java,5,22,20,15,15,18,142,4,21,"['Double [ ] p1', ' Double [ ] p2']","['array_Double', 'array_Double']",2,1,5,10,3,TRUE,2,1,array_Double ,java,0,1,0,0,0,0,cosineDist,cosineDist
+count_k.java,3,13,11,7,7,9,52,4,12,"['Integer [ ] a', ' Integer k']","['array_Integer', 'Integer ']",2,1,2,1,1,TRUE,1,1,int ,java,0,0,1,1,1,0,count_k,count_k
+count_non_zeroes.java,3,13,11,7,7,9,49,4,12,['Integer [ ] a'],['array_Integer'],1,1,2,1,1,TRUE,1,1,int ,java,1,1,1,1,1,1,count_non_zeroes,count_non_zeroes
+covariance.java,2,18,16,13,13,14,113,4,17,"['Double [ ] elements1', ' Double [ ] elements2']","['array_Double', 'array_Double']",2,1,7,8,1,TRUE,1,1,array_double ,java,1,0,0,0,0,0,covariance,covariance
+dec.java,2,11,9,6,4,5,42,3,8,"['int [ ] array1', ' int [ ] array2']","['array_int', 'array_int']",2,1,1,2,5,FALSE,0,0,none,java,0,0,0,0,0,0,dec,dec
+dec_array.java,2,11,9,6,6,7,42,4,10,"['Integer [ ] a', ' Integer k']","['array_Integer', 'Integer ']",2,1,1,1,1,TRUE,1,1,array_Integer ,java,1,1,0,0,0,1,dec_array,dec_array
+dist.java,2,11,9,6,6,7,57,4,10,"['Double [ ] p1', ' Double [ ] p2']","['array_Double', 'array_Double']",2,1,2,3,2,TRUE,1,1,double ,java,0,1,0,1,1,1,dist,dist
+distInf.java,2,11,9,6,6,7,64,4,10,"['Double [ ] p1', ' Double [ ] p2']","['array_Double', 'array_Double']",2,1,2,2,3,TRUE,1,1,double ,java,0,1,0,1,1,1,distInf,distInf
+dot_product.java,2,12,10,7,7,8,54,4,11,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,2,2,1,TRUE,1,1,int ,java,1,1,0,1,1,1,dot_product,dot_product
+durbinWatson.java,2,13,11,8,8,9,61,4,12,['Double [ ] elements'],['array_Double'],1,1,4,3,1,TRUE,1,1,array_double ,java,0,1,0,0,0,0,durbinWatson,durbinWatson
+ebeAdd.java,3,14,12,8,8,10,72,4,13,"['Double [ ] a', ' Double [ ] b']","['array_Double', 'array_Double']",2,1,1,1,2,TRUE,2,1,array_Double ,java,1,1,0,0,0,1,ebeAdd,ebeAdd
+ebeDivide.java,3,14,12,8,8,10,73,4,13,"['Double [ ] a', ' Double [ ] b']","['array_Double', 'array_Double']",2,1,1,1,2,TRUE,2,1,array_Double ,java,0,0,0,0,0,0,ebeDivide,ebeDivide
+ebeMultiply.java,3,14,12,8,8,10,73,4,13,"['Double [ ] a', ' Double [ ] b']","['array_Double', 'array_Double']",2,1,1,1,2,TRUE,2,1,array_Double ,java,1,1,0,0,0,1,ebeMultiply,ebeMultiply
+ebeSubtract.java,3,14,12,8,8,10,72,4,13,"['Double [ ] a', ' Double [ ] b']","['array_Double', 'array_Double']",2,1,1,1,2,TRUE,2,1,array_Double ,java,0,0,0,0,0,0,ebeSubtract,ebeSubtract
+elemtWise_equal.java,3,15,13,9,9,11,79,4,14,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,1,0,2,TRUE,1,1,array_boolean ,java,0,0,0,0,0,0,elemtWise_equal,elemtWise_equal
+elemtWise_max.java,3,15,13,9,9,11,85,4,14,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,1,0,2,TRUE,1,1,array_int ,java,1,1,0,0,0,1,elemtWise_max,elemtWise_max
+elemtWise_min.java,3,15,13,9,9,11,85,4,14,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,1,0,2,TRUE,1,1,array_int ,java,1,1,0,0,0,1,elemtWise_min,elemtWise_min
+elemtWise_not_eq.java,3,15,13,9,9,11,79,4,14,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,1,0,2,TRUE,1,1,array_boolean ,java,0,0,0,0,0,0,elemtWise_not_eq,elemtWise_not_eq
+entropy.java,4,18,16,11,11,14,106,4,17,['final Double [ ] k'],['array_Double'],1,2,5,6,3,TRUE,1,1,array_double ,java,1,1,1,1,1,0,entropy,entropy
+equals.java,6,18,16,10,10,14,100,4,17,"['Double [ ] x', ' Double [ ] y']","['array_Double', 'array_Double']",2,1,1,1,1,TRUE,4,1,array_Double ,java,0,0,0,0,0,0,equals,equals
+errorRate.java,4,18,16,11,11,14,81,4,17,"['Double [ ] labels', ' Double [ ] predictions']","['array_Double', 'array_Double']",2,1,3,3,1,TRUE,1,1,double ,java,0,0,0,0,0,0,errorRate,errorRate
+euc_Dist.java,2,12,10,6,6,8,72,2,9,"['double [ ] array1', ' double [ ] array2']","['array_double', 'array_double']",2,0,2,5,3,TRUE,1,1,array_double ,java,0,1,0,1,1,1,euc_Dist,euc_Dist
+evalNewton.java,2,12,10,7,7,8,74,4,11,"['Double [ ] a', ' Double [ ] c', ' Double z']","['array_Double', 'array_Double', 'Double ']",3,1,3,4,1,TRUE,1,1,array_double ,java,0,0,0,1,0,0,evalNewton,evalNewton
+evaluateHoners.java,2,12,10,7,7,8,61,4,11,"['Double [ ] coefficients', ' Double argument']","['array_Double', 'Double ']",2,1,3,3,1,TRUE,1,1,array_double ,java,1,1,0,1,1,1,evaluateHoners,evaluateHoners
+evalWeightedProd.java,2,12,10,7,7,8,76,4,11,"['final Double [ ] values', ' final Double [ ] weights', ' final Integer begin', ' final Integer length']","['array_Double', 'array_Double', 'Integer ', 'Integer ']",4,1,2,2,2,TRUE,1,1,double ,java,1,1,0,1,1,1,evalWeightedProd,evalWeightedProd
+eval_Internal.java,6,38,36,29,29,34,290,4,37,"['Double [ ] x', ' Double [ ] y', ' Double z']","['array_Double', 'array_Double', 'Double ']",3,3,12,15,3,TRUE,1,1,array_double ,java,0,0,0,0,0,0,eval_Internal,eval_Internal
+find_diff.java,2,12,10,7,7,8,65,4,11,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,1,1,2,TRUE,1,1,array_int ,java,0,0,0,0,0,0,find_diff,find_diff
+find_euc_Dist.java,2,13,11,8,8,9,78,4,12,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,3,4,2,TRUE,1,1,double ,java,0,1,0,1,1,1,find_euc_Dist,find_euc_Dist
+find_magnitude.java,2,13,11,8,8,9,59,4,12,['Integer [ ] a'],['array_Integer'],1,1,3,3,2,TRUE,1,1,double ,java,1,1,1,1,1,1,find_magnitude,find_magnitude
+find_max.java,3,13,11,7,7,9,56,4,12,['Integer [ ] a'],['array_Integer'],1,1,2,0,1,TRUE,1,1,array_int ,java,1,1,1,1,1,1,find_max,find_max
+find_max2.java,3,13,11,7,7,9,77,4,12,['Integer [ ] a'],['array_Integer'],1,1,2,2,1,TRUE,1,1,array_int ,java,1,1,0,1,1,1,find_max2,find_max2
+find_median.java,5,27,25,19,19,23,180,4,26,['Integer [ ] a'],['array_Integer'],1,2,6,6,5,TRUE,2,1,array_int ,java,1,1,1,0,0,1,find_median,find_median
+find_min.java,3,14,12,8,8,10,58,4,13,['Integer [ ] a'],['array_Integer'],1,1,2,0,1,TRUE,1,1,array_int ,java,1,1,1,0,0,1,find_min,find_min
+geometric_mean.java,2,11,9,6,6,7,57,4,10,['Integer [ ] a'],['array_Integer'],1,1,2,3,3,TRUE,1,1,array_Integer ,java,1,1,1,0,0,1,geometric_mean,geometric_mean
+get_array_value.java,3,11,9,6,6,7,45,4,10,"['Integer [ ] a', ' Integer k']","['array_Integer', 'Integer ']",2,0,0,2,0,TRUE,2,1,array_Integer ,java,1,1,0,1,1,1,get_array_value,get_array_value
+g_Test.java,5,24,22,17,17,20,181,4,23,"['final Double [ ] expected', ' final Double [ ] observed']","['array_Double', 'array_Double']",2,2,8,9,3,TRUE,1,1,array_double ,java,0,1,0,1,1,1,g_Test,g_Test
+hamming_dist.java,3,13,11,7,7,9,57,4,12,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,2,1,1,TRUE,1,1,int ,java,0,0,0,1,1,1,hamming_dist,hamming_dist
+harmonicMean.java,2,11,9,6,6,7,48,4,10,['Double [ ] data'],['array_Double'],1,1,2,3,2,TRUE,1,1,array_Double ,java,1,1,1,0,0,1,harmonicMean,harmonicMean
+insertion_sort.java,4,16,14,10,10,12,82,4,15,['Integer [ ] array'],['array_Integer'],1,2,3,2,1,TRUE,1,1,array_int ,java,1,1,1,0,0,1,insertion_sort,insertion_sort
+kurtosis.java,3,20,18,14,14,16,149,4,19,['Double [ ] data'],['array_Double'],1,2,8,16,7,TRUE,1,1,array_Double ,java,1,1,1,0,0,0,kurtosis,kurtosis
+lag.java,2,18,16,13,13,14,127,4,17,"['Double [ ] elements', ' Double mean']","['array_Double', 'Double ']",2,1,7,13,1,TRUE,1,1,array_double ,java,0,1,0,0,0,0,lag,lag
+manhattanDist.java,2,12,10,7,7,8,59,4,11,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,2,3,2,TRUE,1,1,double ,java,0,1,0,1,1,1,manhattanDist,manhattanDist
+manhattanDist2.java,2,11,9,6,6,7,59,4,10,"['Double [ ] p1', ' Double [ ] p2']","['array_Double', 'array_Double']",2,1,2,3,2,TRUE,1,1,double ,java,0,1,0,1,1,1,manhattanDist2,manhattanDist2
+max.java,3,14,12,8,8,10,64,4,13,['Double [ ] elements'],['array_Double'],1,1,3,1,1,TRUE,1,1,array_double ,java,1,1,1,1,1,1,max,max
+meanDeviation.java,2,12,10,7,7,8,58,4,11,"['Double [ ] elements', ' Double mean']","['array_Double', 'Double ']",2,1,3,4,2,TRUE,1,1,double ,java,1,0,1,0,0,0,meanDeviation,meanDeviation
+mean_abs_error.java,2,11,9,6,6,7,64,4,10,"['Integer [ ] a', ' Integer [ ] b']","['array_Integer', 'array_Integer']",2,1,2,4,3,TRUE,1,1,array_Integer ,java,0,1,0,0,0,1,mean_abs_error,mean_abs_error
+mean_Diff.java,2,11,9,6,6,7,58,4,10,"['final Double [ ] sample1', ' final Double [ ] sample2']","['array_Double', 'array_Double']",2,1,2,0,2,TRUE,1,1,double ,java,0,0,0,0,0,0,mean_Diff,mean_Diff
+min.java,3,14,12,8,8,10,64,4,13,['Double [ ] elements'],['array_Double'],1,1,3,1,1,TRUE,1,1,array_double ,java,1,1,1,0,0,1,min,min
+partition.java,9,29,27,20,20,25,173,4,28,"['final Double [ ] work', ' final Integer begin', ' final Integer end', ' final Integer pivot']","['array_Double', 'Integer ', 'Integer ', 'Integer ']",4,3,4,7,0,TRUE,1,1,array_double ,java,0,0,0,0,0,0,partition,partition
+polevl.java,2,13,11,8,8,9,57,4,12,"['Double x', ' Double [ ] coef', ' Integer N']","['Double ', 'array_Double', 'Integer ']",3,1,2,2,0,TRUE,1,1,array_Double ,java,1,1,0,1,1,1,polevl,polevl
+pooledMean.java,3,17,15,11,11,13,117,4,16,"['Double [ ] data1', ' Double [ ] data2']","['array_Double', 'array_Double']",2,2,6,7,7,TRUE,1,1,array_Double ,java,1,1,1,0,0,1,pooledMean,pooledMean
+pooledVariance.java,3,23,21,17,17,19,181,4,22,"['Double [ ] data1', ' Double [ ] data2']","['array_Double', 'array_Double']",2,2,10,17,9,TRUE,1,1,array_Double ,java,1,1,1,0,0,1,pooledVariance,pooledVariance
+power.java,2,10,8,5,5,6,50,4,9,"['Double [ ] data', ' Integer k']","['array_Double', 'Integer ']",2,1,1,1,2,TRUE,1,1,array_Double ,java,0,1,0,0,0,1,power,power
+product.java,2,12,10,7,7,8,47,4,11,['Double [ ] elements'],['array_Double'],1,1,3,1,1,TRUE,1,1,double ,java,1,1,1,1,1,1,product,product
+quantile.java,3,20,18,14,14,16,106,4,19,"['Double [ ] sortedElements', ' Double phi']","['array_Double', 'Double ']",2,0,5,6,1,TRUE,2,1,array_Double ,java,1,1,0,0,1,1,quantile,quantile
+reverse.java,2,13,11,8,8,9,63,4,12,['Integer [ ] a'],['array_Integer'],1,1,2,1,2,TRUE,1,1,array_int ,java,1,1,0,0,0,1,reverse,reverse
+safeNorm.java,11,58,56,45,45,54,336,4,57,['Double [ ] v'],['array_Double'],1,1,16,39,7,TRUE,1,1,array_double ,java,1,1,1,1,1,1,safeNorm,safeNorm
+sampleKurtosis.java,1,10,8,6,6,6,95,4,9,"['Integer size', ' Double moment4', ' Double sampleVariance']","['Integer ', 'Double ', 'Double ']",3,0,3,5,0,TRUE,1,1,double ,java,1,0,1,0,0,1,sampleKurtosis,sampleKurtosis
+sampleSkew.java,1,10,8,6,6,6,60,4,9,"['Integer size', ' Double moment3', ' double sampleVariance']","['Integer ', 'Double ', 'double ']",3,0,3,5,1,TRUE,1,1,int ,java,1,0,1,0,0,0,sampleSkew,sampleSkew
+sampleVariance.java,2,13,11,8,8,9,64,4,12,"['Double [ ] elements', ' Double mean']","['array_Double', 'Double ']",2,1,4,5,1,TRUE,1,1,array_double ,java,1,1,1,0,0,1,sampleVariance,sampleVariance
+sampleWeightedVar.java,2,15,13,10,10,11,100,4,14,"['Double [ ] data', ' Double [ ] weights']","['array_Double', 'array_Double']",2,1,4,8,1,TRUE,1,1,double ,java,0,0,0,0,0,1,sampleWeightedVar,sampleWeightedVar
+scale.java,2,11,9,6,6,7,59,4,10,"['Double val', ' final Double [ ] arr']","['Double ', 'array_Double']",2,1,1,1,2,TRUE,1,1,array_double ,java,1,1,0,0,0,1,scale,scale
+selection_sort.java,4,21,19,14,14,17,106,4,20,['Integer [ ] list'],['array_Integer'],1,2,4,0,2,TRUE,1,1,array_int ,java,1,1,1,0,0,1,selection_sort,selection_sort
+sequential_search.java,3,13,11,7,7,9,50,4,12,"['Integer [ ] a', ' Integer key']","['array_Integer', 'Integer ']",2,1,1,1,1,TRUE,2,1,array_Integer ,java,0,0,0,1,1,0,sequential_search,sequential_search
+set_min_val.java,3,13,11,7,7,9,53,4,12,"['Integer [ ] a', ' Integer k']","['array_Integer', 'Integer ']",2,1,1,0,1,TRUE,1,1,array_Integer ,java,1,1,0,0,0,1,set_min_val,set_min_val
+shell_sort.java,5,22,22,16,16,20,129,2,21,['Integer [ ] a'],['array_Integer'],1,3,4,2,2,TRUE,1,1,array_Integer ,java,1,1,1,0,0,1,shell_sort,shell_sort
+skew.java,3,20,18,14,14,16,144,4,19,['Double [ ] data'],['array_Double'],1,2,8,14,7,TRUE,1,1,double ,java,1,1,1,0,0,0,skew,skew
+square.java,2,10,8,5,5,6,45,4,9,['Double [ ] data'],['array_Double'],1,1,1,1,1,TRUE,1,1,array_Double ,java,1,1,0,0,0,1,square,square
+standardize.java,3,18,16,12,12,14,122,4,17,['Double [ ] data'],['array_Double'],1,2,6,10,5,TRUE,1,1,array_Double ,java,1,1,0,0,0,0,standardize,standardize
+sum.java,2,11,9,6,6,7,30,4,10,['Integer [ ] values'],['array_Integer'],1,1,1,1,0,TRUE,1,1,int ,java,1,1,1,1,1,1,sum,sum
+sumOfLogarithms.java,2,11,9,6,6,7,47,4,10,['Double [ ] elements'],['array_Double'],1,1,2,4,2,TRUE,1,1,double ,java,1,1,1,1,1,1,sumOfLogarithms,sumOfLogarithms
+sum_labeled.java,5,11,9,6,6,7,61,4,10,"['int [ ] a', ' int i', ' int j']","['array_int', 'int ', 'int ']",3,0,0,3,0,TRUE,2,1,array_double ,java,0,0,0,0,0,0,sum_labeled,sum_labeled
+sum_Power_Deviat.java,2,11,9,6,6,7,57,4,10,"['Double [ ] data', ' Integer k', ' Double c']","['array_Double', 'Integer ', 'Double ']",3,1,2,3,2,TRUE,1,1,double ,java,0,0,0,0,0,0,sum_Power_Deviat,sum_Power_Deviat
+s_add.java,2,8,7,4,4,5,42,2,6,"['int [ ] array1', ' int [ ] array2']","['array_int', 'array_int']",2,1,1,1,1,FALSE,0,0,none,java,1,0,0,1,1,0,s_add,s_add
+tanimotoDist.java,4,23,21,16,16,19,129,4,22,"['Double [ ] p1', ' Double [ ] p2']","['array_Double', 'array_Double']",2,1,5,10,1,TRUE,2,1,array_Double ,java,0,0,0,0,0,0,tanimotoDist,tanimotoDist
+variance.java,3,19,17,13,13,15,121,4,18,['Double [ ] x'],['array_Double'],1,2,6,6,4,TRUE,1,1,double ,java,1,1,1,0,0,1,variance,variance
+var_Difference.java,3,21,19,15,15,17,143,4,20,"['final Double [ ] sample1', ' final Double [ ] sample2']","['array_Double', 'array_Double']",2,2,8,3,1,TRUE,1,1,double ,java,1,1,0,0,0,1,var_Difference,var_Difference
+weightedMean.java,2,15,13,10,10,11,76,4,14,"['Double [ ] elements', ' Double [ ] theWeights']","['array_Double', 'array_Double']",2,1,5,4,1,TRUE,1,1,array_double ,java,1,1,0,0,0,1,weightedMean,weightedMean
+weightedRMS.java,2,13,11,8,8,9,76,4,12,"['Double [ ] data', ' Double [ ] weights']","['array_Double', 'array_Double']",2,1,3,4,1,TRUE,1,1,double ,java,0,0,0,0,0,0,weightedRMS,weightedRMS
+weighted_average.java,2,13,11,8,8,9,66,4,12,"['Double [ ] a', ' Double [ ] b']","['array_Double', 'array_Double']",2,1,3,4,1,TRUE,1,1,double ,java,1,1,0,0,0,1,weighted_average,weighted_average
+winsorizedMean.java,4,21,19,14,14,17,146,4,20,"['Double [ ] sortedElements', ' Integer left', ' Integer right']","['array_Double', 'Integer ', 'Integer ']",3,3,8,9,3,TRUE,1,1,array_double ,java,1,1,0,0,1,1,winsorizedMean,winsorizedMean
