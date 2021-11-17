@@ -15,8 +15,8 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import balanced_accuracy_score
 
-#mr = pd.read_csv('MR_ADD.csv', index_col=0)
-#MR = 'MR_ADD'
+mr = pd.read_csv('MR_ADD.csv', index_col=0)
+MR = 'MR_ADD'
 
 #mr = pd.read_csv('MR_MUL.csv', index_col=0)
 #MR = 'MR_MUL'
