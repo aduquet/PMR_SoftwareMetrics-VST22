@@ -31,15 +31,35 @@ from sklearn.metrics import balanced_accuracy_score
 #mr = pd.read_csv('MR_EXC.csv', index_col=0)
 #MR = 'MR_EXC'
 
-mr = pd.read_csv('MR_INV.csv', index_col=0)
+#mr = pd.read_csv('MR_INV.csv', index_col=0)
+#MR = 'MR_INV'
+
+####
+#RWK
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_ADD-RWK.csv', index_col=0)
+#MR = 'MR_ADD'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_MUL-RWK.csv', index_col=0)
+#MR = 'MR_MUL'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_PER-RWK.csv', index_col=0)
+#MR = 'MR_PER'
+
+mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_INC-RWK.csv', index_col=0)
+MR = 'MR_INC'
+
+mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_EXC-RWK.csv', index_col=0)
+MR = 'MR_EXC'
+
+mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_INV-RWK.csv', index_col=0)
 MR = 'MR_INV'
 
-model = 'DT'
+model = 'DT-RWK'
 output = model + '_' + MR
 
 labels = mr[MR]
 data = mr.copy()
-data.drop([MR,'ext'], axis=1, inplace=True)
+#data.drop([MR,'ext'], axis=1, inplace=True)
 
 data = np.asarray(data)
 labels = np.asarray(labels)

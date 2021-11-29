@@ -29,18 +29,38 @@ from sklearn.naive_bayes import GaussianNB
 #mr = pd.read_csv('MR_INC.csv', index_col=0)
 #MR = 'MR_INC'
 
-mr = pd.read_csv('MR_EXC.csv', index_col=0)
-MR = 'MR_EXC'
+#mr = pd.read_csv('MR_EXC.csv', index_col=0)
+#MR = 'MR_EXC'
 
 #mr = pd.read_csv('MR_INV.csv', index_col=0)
 #MR = 'MR_INV'
 
-model = 'NB'
+####
+#RWK
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_ADD-RWK.csv', index_col=0)
+#MR = 'MR_ADD'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_MUL-RWK.csv', index_col=0)
+#MR = 'MR_MUL'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_PER-RWK.csv', index_col=0)
+#MR = 'MR_PER'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_INC-RWK.csv', index_col=0)
+#MR = 'MR_INC'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_EXC-RWK.csv', index_col=0)
+#MR = 'MR_EXC'
+
+mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_INV-RWK.csv', index_col=0)
+MR = 'MR_INV'
+
+model = 'NB-RWK'
 output = model + '_' + MR
 
 labels = mr[MR]
 data = mr.copy()
-data.drop([MR,'ext'], axis=1, inplace=True)
+#data.drop([MR,'ext'], axis=1, inplace=True)
 
 data = np.asarray(data)
 labels = np.asarray(labels)

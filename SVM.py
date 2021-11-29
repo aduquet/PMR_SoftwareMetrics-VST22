@@ -15,8 +15,8 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import balanced_accuracy_score
 
-mr = pd.read_csv('MR_ADD.csv', index_col=0)
-MR = 'MR_ADD'
+#mr = pd.read_csv('MR_ADD.csv', index_col=0)
+#MR = 'MR_ADD'
 
 #mr = pd.read_csv('MR_MUL.csv', index_col=0)
 #MR = 'MR_MUL'
@@ -33,12 +33,32 @@ MR = 'MR_ADD'
 #mr = pd.read_csv('MR_INV.csv', index_col=0)
 #MR = 'MR_INV'
 
-model = 'SVM'
+####
+#RWK
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_ADD-RWK.csv', index_col=0)
+#MR = 'MR_ADD'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_MUL-RWK.csv', index_col=0)
+#MR = 'MR_MUL'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_PER-RWK.csv', index_col=0)
+#MR = 'MR_PER'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_INC-RWK.csv', index_col=0)
+#MR = 'MR_INC'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_EXC-RWK.csv', index_col=0)
+#MR = 'MR_EXC'
+
+#mr = pd.read_csv('DS-LabelledEncoded-RWK\MR_INV-RWK.csv', index_col=0)
+#MR = 'MR_INV'
+
+model = 'SVM-RWK'
 output = model + '_' + MR
 
 labels = mr[MR]
 data = mr.copy()
-data.drop([MR,'ext'], axis=1, inplace=True)
+#data.drop([MR,'ext'], axis=1, inplace=True)
 
 data = np.asarray(data)
 labels = np.asarray(labels)
@@ -71,7 +91,7 @@ for train_index, test_index in skf.split(data, labels):
 
     x_train, x_test = data[train_index], data[test_index]
     y_train, y_test = labels[train_index], labels[test_index]
-    #X_train, X_test, y_train, y_test = train_test_split(add, labels, test_size=0.3, random_state=47) # 70% training and 30% test
+    #x_train, x_test, y_train, y_test = train_test_split(data, labels, test_size=0.3, random_state=47) # 70% training and 30% test
 
     rf = svm.SVC(kernel='linear') 
     rf.fit(x_train, y_train)
@@ -113,5 +133,5 @@ for train_index, test_index in skf.split(data, labels):
     #print("AUC:", roc_auc_score(y_test, y_pred_rf))      
 
 df_score = pd.DataFrame(score, columns = metric)
-
+print(df_score)
 df_score.to_csv(output + '.csv')
