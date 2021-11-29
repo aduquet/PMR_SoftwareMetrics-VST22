@@ -23,6 +23,7 @@ data2.drop([MR,'ext'], axis=1, inplace=True)
 #data2.drop([MR], axis=1, inplace=True)
 
 head = data2.columns.values
+#print(len(head))
 #data2 = np.asarray(data2)
 #labels = np.asarray(labels)
 
@@ -82,10 +83,11 @@ def sort(importance, indices):
         #print(a)
         #print(importance[a])
         featureimportanceScore.append(importance[a])
+   # print(len(featureimportanceScore))
     return featureimportanceScore
 
 featureimportanceScore_aux = []
-for i in range(1,3):
+for i in range(1,11):
     X_train, X_test, y_train, y_test = train_test_split(data2, data[MR], train_size= 0.7, random_state=42)
     clf.fit(X_train,y_train)
     y_pred_rf= clf.predict(X_test)
@@ -124,14 +126,14 @@ for i in range(1,3):
     featureScore.append(importance)
     indeceScore.append(indices)
     #print(featureImportanceList)
-print(len(featureImportanceScore_l))
-print(featureimportanceScore_aux, len(featureimportanceScore_aux))
-print(score, len(score))
+#print(len(featureImportanceScore_l))
+#print(featureimportanceScore_aux, len(featureimportanceScore_aux))
+#print(score, len(score))
 
 df_score = pd.DataFrame(score, columns = metric)
-#df_featureimportance = pd.DataFrame(featureimportanceScore_aux, columns = featureImportanceScore_l)
+df_featureimportance = pd.DataFrame(featureimportanceScore_aux, columns = head)
 df_score.to_csv('RF_metrics.csv')
-#df_featureimportance.to_csv('featureImportance.csv')
+df_featureimportance.to_csv('featureImportance.csv')
     #importance = clf.feature_importances_
     #std = np.std([tree.feature_importances_ for tree in clf.estimators_], axis=0)
     #indices = np.argsort(importance)[::-1]
@@ -144,4 +146,5 @@ df_score.to_csv('RF_metrics.csv')
 #y_pred=clf.predict(X_test)
 #df = DataFrame(['featureName', 'importance'])
 #print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
+
 
