@@ -9,12 +9,26 @@ from sklearn.metrics import *
 
 
 #data = pd.read_csv('MRs_Dataset\MR_ADD.csv', index_col=0)
-data = pd.read_csv('DS-LabelledEncoded-SM\MR_ADD.csv', index_col=0)
-data = pd.read_csv('DS-LabelledEncoded-SM\MR_ADD.csv', index_col=0)
-data = pd.read_csv('DS-LabelledEncoded-SM\MR_ADD.csv', index_col=0)
-data = pd.read_csv('DS-LabelledEncoded-SM\MR_ADD.csv', index_col=0)
-data = pd.read_csv('DS-LabelledEncoded-SM\MR_ADD.csv', index_col=0)
-MR = 'MR_ADD'
+#data = pd.read_csv('DS-LabelledEncoded-SM\MR_ADD.csv', index_col=0)
+#output = 'ADD'
+#MR = 'MR_ADD'
+
+#data = pd.read_csv('DS-LabelledEncoded-SM\MR_MUL.csv', index_col=0)
+#output = 'MUL'
+#MR = 'MR_MUL'
+
+#data = pd.read_csv('DS-LabelledEncoded-SM\MR_PER.csv', index_col=0)
+#output = 'PER'
+#MR = 'MR_PER'
+
+#data = pd.read_csv('DS-LabelledEncoded-SM\MR_INC.csv', index_col=0)
+#output = 'INC'
+#MR = 'MR_INC'
+
+data = pd.read_csv('DS-LabelledEncoded-SM\MR_EXC.csv', index_col=0)
+output = 'EXC'
+MR = 'MR_EXC'
+
 
 labels = data[MR]
 
@@ -126,25 +140,10 @@ for i in range(1,11):
     featureScore.append(importance)
     indeceScore.append(indices)
     #print(featureImportanceList)
-#print(len(featureImportanceScore_l))
-#print(featureimportanceScore_aux, len(featureimportanceScore_aux))
-#print(score, len(score))
 
 df_score = pd.DataFrame(score, columns = metric)
 df_featureimportance = pd.DataFrame(featureimportanceScore_aux, columns = head)
-df_score.to_csv('RF_metrics.csv')
-df_featureimportance.to_csv('featureImportance.csv')
-    #importance = clf.feature_importances_
-    #std = np.std([tree.feature_importances_ for tree in clf.estimators_], axis=0)
-    #indices = np.argsort(importance)[::-1]
-    #indices = np.sort(indices)
-
-#pd.series(clf.estimator_,clf.feature_importances_,clf.ravel()).hist()
-#print(head)
-#print(importance, indices)
-
-#y_pred=clf.predict(X_test)
-#df = DataFrame(['featureName', 'importance'])
-#print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
+df_score.to_csv('RF_metrics_' + output + '.csv')
+df_featureimportance.to_csv('featureImportance_' + output + '.csv')
 
 
