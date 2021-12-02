@@ -25,9 +25,13 @@ from sklearn.metrics import *
 #output = 'INC'
 #MR = 'MR_INC'
 
-data = pd.read_csv('DS-LabelledEncoded-SM\MR_EXC.csv', index_col=0)
-output = 'EXC'
-MR = 'MR_EXC'
+#data = pd.read_csv('DS-LabelledEncoded-SM\MR_EXC.csv', index_col=0)
+#output = 'EXC'
+#MR = 'MR_EXC'
+
+data = pd.read_csv('DS-LabelledEncoded-SM\MR_INV.csv', index_col=0)
+output = 'INV'
+MR = 'MR_INV'
 
 
 labels = data[MR]
